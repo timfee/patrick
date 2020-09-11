@@ -1,15 +1,20 @@
 import Obfuscate from "react-obfuscate";
-
+import Head from "next/head";
 export default function Home() {
   return (
     <div className="flex h-screen text-white bg-gray-900">
+      <Head>
+        <title>PATRICK ALAN STUDIO</title>
+      </Head>
       <div className="m-auto" style={{ fontFamily: "Playfair Display, serif" }}>
+        <h1 className="hidden">PATRICK ALAN STUDIO</h1>
         <svg
           width="331"
           height="43"
           xmlns="http://www.w3.org/2000/svg"
           className="mb-4"
         >
+          <title>PATRICK ALAN STUDIO</title>
           <g fill="none" fill-rule="evenodd">
             <path stroke="#FFF" strokeWidth="6" d="M.513 36.59L166 37" />
             <path
