@@ -6,6 +6,8 @@ export default function Home() {
     "@type": "HairSalon",
     name: "Patrick Alan Studio",
     url: "https://patrickalanstudio.com/",
+    priceRange: "$$$",
+    image: ["https://patrickalanstudio.com/opengraph.png"],
     address: {
       "@type": "PostalAddress",
       streetAddress: "56 Wareham St Suite 206",
@@ -14,6 +16,8 @@ export default function Home() {
       postalCode: "02118",
       addressCountry: "United States",
     },
+    telephone: "+1-719-271-4574",
+
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "719-271-4574",
