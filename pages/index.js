@@ -23,6 +23,44 @@ export default function Home() {
     <div className="flex h-screen text-white bg-gray-900">
       <Head>
         <title>PATRICK ALAN STUDIO</title>
+
+        <meta name="title" content="PATRICK ALAN STUDIO" />
+        <meta
+          name="description"
+          content="56 Wareham St Suite 206 • Boston, MA • 719.271.4574"
+        />
+
+        <meta property="og:type" content="business.business" />
+        <meta property="og:title" content="PATRICK ALAN STUDIO" />
+        <meta property="og:url" content="https://patrickalanstudio.com/" />
+        <meta
+          property="og:image"
+          content="https://patrickalanstudio.com/opengraph.png"
+        />
+        <meta
+          property="business:contact_data:street_address"
+          content="56 Wareham St Suite 206"
+        />
+        <meta property="business:contact_data:locality" content="Boston" />
+        <meta property="business:contact_data:region" content="MA" />
+        <meta property="business:contact_data:postal_code" content="02118" />
+        <meta property="business:contact_data:country_name" content="USA" />
+        <meta
+          property="og:description"
+          content="56 Wareham St Suite 206 • Boston, MA • 719.271.4574"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://patrickalanstudio.com/" />
+        <meta property="twitter:title" content="PATRICK ALAN STUDIO" />
+        <meta
+          property="twitter:description"
+          content="56 Wareham St Suite 206 • Boston, MA • 719.271.4574"
+        />
+        <meta
+          property="twitter:image"
+          content="https://patrickalanstudio.com/opengraph.png"
+        />
       </Head>
       <div className="m-auto" style={{ fontFamily: "Lora, serif" }}>
         <script
