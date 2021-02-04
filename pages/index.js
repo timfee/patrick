@@ -1,12 +1,36 @@
 import Obfuscate from "react-obfuscate";
 import Head from "next/head";
 export default function Home() {
+  const jsonLd = {
+    "@context": "http://www.schema.org",
+    "@type": "HairSalon",
+    name: "Patrick Alan Studio",
+    url: "https://patrickalanstudio.com/",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "56 Wareham St Suite 206",
+      addressLocality: "Boston",
+      addressRegion: "Massachusetts",
+      postalCode: "02118",
+      addressCountry: "United States",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "719-271-4574",
+    },
+  };
   return (
     <div className="flex h-screen text-white bg-gray-900">
       <Head>
         <title>PATRICK ALAN STUDIO</title>
       </Head>
-      <div className="m-auto" style={{ fontFamily: "Playfair Display, serif" }}>
+      <div className="m-auto" style={{ fontFamily: "Lora, serif" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        ></script>
         <h1 className="hidden">PATRICK ALAN STUDIO</h1>
         <svg
           width="331"
@@ -24,12 +48,29 @@ export default function Home() {
             />
           </g>
         </svg>
-        <Obfuscate
-          className={
-            "text-gray-500 hover:text-gray-100 transition-ease-out duration-300"
-          }
-          email="info@patrickalanstudio.com"
-        />
+        <p className="leading-loose">
+          <Obfuscate
+            className={
+              "text-gray-400 hover:text-gray-100 transition-ease-out duration-300 border-b border-gray-700"
+            }
+            email="info@patrickalanstudio.com"
+          />
+          <br />
+          <a
+            className="hover:text-gray-100 transition-ease-out text-gray-400 duration-300"
+            href="tel:1-719-271-4574"
+          >
+            719.271.4574
+          </a>
+        </p>
+        <address className="mt-12 text-sm italic text-right text-gray-500">
+          <p>
+            56 Wareham St Suite 206
+            <br />
+            Boston, MA 02118
+          </p>
+          <p className="mt-4"></p>
+        </address>
       </div>
     </div>
   );
