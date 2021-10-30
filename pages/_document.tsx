@@ -15,6 +15,14 @@ class MyDocument extends Document {
             src={`https://www.googletagmanager.com/gtag/js?id=G-PJN0G9HN9T`}
           />
           <script
+            data-host="https://microanalytics.io"
+            data-dnt="false"
+            src="https://microanalytics.io/js/script.js"
+            id="ZwSg9rf6GA"
+            async
+            defer
+          ></script>
+          <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
