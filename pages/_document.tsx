@@ -1,10 +1,14 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <meta
+            name="google-site-verification"
+            content="VgBh7FsoCnNZHG5MjTpiA_bTt6Mm8K4yIf2aBAavUyU"
+          />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
@@ -40,8 +44,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument
