@@ -105,7 +105,7 @@ export const Home = () => {
             className="text-gray-400 duration-300 hover:text-gray-100 transition-ease-out"
             href="tel:1-719-271-4574"
           >
-            719.271.4574
+            719-271-4574
           </a>
         </p>
         <address className="mt-12 text-sm italic text-right text-gray-500 mb-10">
