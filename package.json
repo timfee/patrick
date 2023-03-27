@@ -12,7 +12,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.14",
     "next": "13.1.6",
     "next-plausible": "^3.7.1",
     "postcss": "8.4.21",
